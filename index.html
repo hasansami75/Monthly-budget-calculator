@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Monthly Budget Calculator</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-12 text-center mb-5">
+                    <h1>Monthly Budget Calculator</h1>
+            </div>
+
+            </div>
+            <div class="row mb-2">
+                <div class="col-md-6">
+                    <h3 class="d-inline-block">Enter your monthly income:</h3><input id="monthly-income" class="ml-md-1" type="text">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mr-3">Your monthly income is: <span id="incomeIs">00</span></h3>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-6">
+                    <h3 class="d-inline-block">Enter your expenses name :</h3><input  id="monthly-expense" class="ml-md-2" type="text">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="d-inline-block">Enter your expenses cost :</h3><input id="cost" class="ml-md-2" type="text">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12 text-center">
+                    <button id="enter" type="button" class="btn btn-success">Enter</button>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <h3>Remaining Balance:<span  id="remain"></span></h3>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-md-12">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Sector</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody id="table-body">
+                          <!-- <tr>
+                            <th scope="row"></th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"></th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                          </tr>
+                          <tr>
+                            <th scope="row"></th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                          </tr> -->
+                        </tbody>
+                      </table>
+                </div>
+            </div>           
+            
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
